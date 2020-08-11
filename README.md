@@ -9,7 +9,7 @@ In order to get the boundary in next few days through prediction the stock marke
 
 A bull market is a market that is on the rise and is economically sound, while a bear market is a market that is receding, where most stocks are declining in value.
 
-*ELM*
+# *ELM*
 
 This method is essentially a single feedforward neural network; its structure consists of a single layer of hidden nodes, where the weights between inputs and hidden nodes are randomly assigned and remain constant during training and predicting phases. On the contrary, the weights that connect hidden nodes to outputs can be trained very fast. Experimental studies showed that ELMs can produce acceptable predictive performance and their computational cost is much lower than networks trained by the back-propagation algorithm.
 
@@ -19,7 +19,7 @@ Activation function – Sigmoid function, ReLu function
 
 The extreme learning machine tries to minimize the empirical and structural error by adjusting the weights and biases. 
 
-*Trading Strategy*
+# *Trading Strategy*
 The basic idea of this theory is that the stock price is always has a certain shock range in a period of time, thus it has a maximum and a minimum price during this time. Imaging there are two ends of a box—the upper boundary and the lower boundary, therefore an oscillation box. When the stock price close to the lower boundary it has the rising trend and on the contrary close to the upper boundary. Furthermore, the price will go into another box to start a new shock in a range after it breaks through the boundary. 
 
 After predicting the upper and lower boundary, which are described as Upi and Lowi , in next n1 days after ith-day, we need to set a standard to detect whether the price series crossing the border.
