@@ -1,4 +1,4 @@
-# Stock-Prediction-Using-OSELM
+# Stock-Prediction-Using-ELM-And-OSELM
 ELM (Extreme Learning Machine) - is a methodology for learning single-hidden layer feedforward neural networks. Unlike traditional neural networks ELM does not need any extra time to adjust weights or biases as it chooses them at random therefore providing a better performance in a short time.
 Box theory – the price of the stocks generally oscillates in a certain range during a period of time named as the box. If the price breaks the upper boundary or the lower boundary of the oscillation box, it will enter another oscillation box in which the price will start a new lower or upward trend, respectively, indicating to us it’s time to buy or sell the stocks.
 Gray Correlation Degree - The method is using the geometric shape of sequence curves to present the relational degree between two data sequences, i.e. it gives us a measure of the closeness of the curves calculated between the feature and the target.
@@ -27,4 +27,15 @@ After predicting the upper and lower boundary, which are described as Upi and Lo
 The first thing is that the price is very close to the lower boundary of the new box, and the second thing is that the lower boundary of the new box is moved upward. Similarly, the price will close to the upper boundary of the new box and the upper boundary of the new box will move downward when it crosses the lower boundary. 
 
 This strategy is proven to be more effective than the buy and hold strategy.
+
+# *OSELM*
+
+OS-ELM consists of two phases: initialization phases and sequential learning phase. 
+
+Initialization phase: In initialization, basic ELM is used to train a SLFN with a small chunk of initial training data. 
+
+Online sequential learning phase: In the online sequential learning phase, the output weights are updated whenever a new chunk of input data with Nk+1 training samples arrives. The short-term prediction performance of the OS-ELM can be further increased with the use of forgetting factor which lies between λ ∈ (0, 1].
+
+The forgetting factor λ enables OS-ELM to continually forget the outdated input data in process of learning, to reduce their bad affection to the following learning. 
+
 
